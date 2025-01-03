@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <header>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="style.css">
+
+            <nav class="navigation">
+                <a href="#" class="active">Home<span></span></a>
+                <a href="#">About<span></span></a>
+                <a href="#">Service<span></span></a>
+                <a href="#">Contact<span></span></a>
+            </nav>
+        </header>
+
+        <section class="section">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+    
+                    <div class="st first">
+                        <img src="./gambar/gambar1.jpeg" alt="">
+                    </div>
+    
+                    <div class="st">
+                        <img src="./gambar/gambar2.jpeg" alt="">
+                    </div>
+    
+                    <div class="st">
+                        <img src="./gambar/gambar3.jpeg" alt="">
+                    </div>
+    
+                    <div class="st">
+                        <img src="./gambar/gambar4.jpeg" alt="">
+                    </div>
+    
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                         
+                    </div>
+                </div>
+    
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+    
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <div id="content">
+                <article id="konten1" class="card">
+                    <nav class="navigation">
+                        <a href="./halaman/halaman2.html">konten 1</a>
+                    </nav>
+                    <img src="./gambar/lingkungan.jpg" class="featured-image" alt="konten1">
+                </article>
+    
+                <article id="konten2" class="card">
+                    <nav class="navigation">
+                        <a href="./halaman/halaman3.html">konten 2</a>
+                    </nav>
+                    <img src="./gambar/lingkungan.jpg" class="featured-image" alt="konten2">
+                </article>
+    
+                <article id="konten3" class="card">
+                    <nav class="navigation">
+                        <a href="./halaman/halaman4.html">konten 3</a>
+                    </nav>
+                    <img src="./gambar/lingkungan.jpg" class="featured-image" alt="konten3">
+                </article>
+                    
+    
+                <article id="konten4" class="card">
+                    <nav class="navigation">
+                        <a href="./halaman/halaman5.html">konten 3</a>
+                    </nav>
+                    <img src="./gambar/lingkungan.jpg" class="featured-image" alt="konten4">
+                </article>
+            </div>
+        </main>
+    
+        <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },5000);
+        </script>
+
+    </body>
+</html>
